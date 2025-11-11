@@ -1,10 +1,12 @@
 import express from 'express';
+import cookieParser from 'cookie-parser';
 import userRoutes from './routes/userRoutes.js';
 import ehrRoutes from './routes/ehrRoutes.js';
 
 const app = express();
 
 app.use(express.json()); // Middleware for parsing JSON bodies
+app.use(cookieParser()); // Middleware for parsing cookies
 
 // A simple test route
 app.get('/api/v1/test', (req, res) => {
