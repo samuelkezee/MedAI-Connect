@@ -1,0 +1,9 @@
+npm init -y
+npm i express dotenv
+npm i nodemon
+Backend/script :{
+    "start":'nodemon backend/sever.js
+}
+//npm start
+samuelsam2k27_db_user
+5d36w7KDD5FHaStu
